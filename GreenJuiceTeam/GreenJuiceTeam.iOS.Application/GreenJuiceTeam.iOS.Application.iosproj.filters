@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="GreenJuiceTeam.iOS">
+      <UniqueIdentifier>{a1209f51-9f17-4eff-b32d-dbccd02939a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GreenJuiceTeam.iOS\Images.xcassets">
+      <UniqueIdentifier>{e143b7bc-a2ce-41cf-9159-5d18a3d4d94a}</UniqueIdentifier>
+      <Extensions>GreenJuiceTeam.iOS\Images.xcassets\*</Extensions>
+    </Filter> 
+    <Filter Include="GreenJuiceTeam.iOS\Images.xcassets\AppIcon.appiconset">
+      <UniqueIdentifier>{f41292a2-38a5-4107-a14e-b9c592e2b7c8}</UniqueIdentifier>
+      <Extensions>GreenJuiceTeam.iOS\Images.xcassets\AppIcon.appiconset\*</Extensions>
+    </Filter>
+    <Filter Include="GreenJuiceTeam.iOS\Supporting Files">
+      <UniqueIdentifier>{c84f4c91-b8d0-477b-afa6-c7556caa4669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res">
+      <UniqueIdentifier>{320dcd5a-dd1d-42e4-a6e3-f190b1cb017d}</UniqueIdentifier>
+      <Extensions>res\*</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GreenJuiceTeam.iOS\AppDelegate.mm">
+      <Filter>GreenJuiceTeam.iOS</Filter>
+    </ClCompile>
+    <ClCompile Include="GreenJuiceTeam.iOS\GameViewController.mm">
+      <Filter>GreenJuiceTeam.iOS</Filter>
+    </ClCompile>
+    <ClCompile Include="GreenJuiceTeam.iOS\main.mm">
+      <Filter>GreenJuiceTeam.iOS\Supporting Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utilities.mm">
+      <Filter>GreenJuiceTeam.iOS</Filter>
+    </ClCompile>
+    <ClInclude Include="GreenJuiceTeam.iOS\AppDelegate.h">
+      <Filter>GreenJuiceTeam.iOS</Filter>
+    </ClInclude>
+    <ClInclude Include="GreenJuiceTeam.iOS\GameViewController.h">
+      <Filter>GreenJuiceTeam.iOS</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities.h">
+      <Filter>GreenJuiceTeam.iOS</Filter>
+    </ClInclude>
+    <Content Include="GreenJuiceTeam.iOS\Base.lproj\Main.storyboard">
+      <Filter>GreenJuiceTeam.iOS</Filter>
+    </Content>
+    <Content Include="GreenJuiceTeam.iOS\Images.xcassets\AppIcon.appiconset\Contents.json">
+      <Filter>GreenJuiceTeam.iOS\Images.xcassets\AppIcon.appiconset</Filter>
+    </Content>
+    <Content Include="res\1.png">
+      <Filter>res</Filter>
+    </Content>
+    <Content Include="res\alien1.wav">
+      <Filter>res</Filter>
+    </Content>
+    <Content Include="res\aliendie1.wav">
+      <Filter>res</Filter>
+    </Content>
+    <Content Include="res\alienTiro1.wav">
+      <Filter>res</Filter>
+    </Content>
+    <Content Include="res\balloon.png">
+      <Filter>res</Filter>
+    </Content>
+    <Content Include="res\boss2_1.png">
+      <Filter>res</Filter>
+    </Content>
+    <Content Include="res\boss2_2.png">
+      <Filter>res</Filter>
+    </Content>
+    <Content Include="res\bossdie.wav">
+      <Filter>res</Filter>
+    </Content>
+    <Content Include="res\explosao.png">
+      <Filter>res</Filter>
+    </Content>
+    <Content Include="res\explosao2.png">
+      <Filter>res</Filter>
+    </Content>
+    <Content Include="res\explosion.wav">
+      <Filter>res</Filter>
+    </Content>
+    <Content Include="res\hb.png">
+      <Filter>res</Filter>
+    </Content>
+    <Content Include="res\intro.png">
+      <Filter>res</Filter>
+    </Content>
+    <Content Include="res\jetclaw.png">
+      <Filter>res</Filter>
+    </Content>
+    <Content Include="res\jetclawExplosion.png">
+      <Filter>res</Filter>
+    </Content>
+    <Content Include="res\level1.mp3">
+      <Filter>res</Filter>
+    </Content>
+    <Content Include="res\level1.png">
+      <Filter>res</Filter>
+    </Content>
+    <Content Include="res\max.png">
+      <Filter>res</Filter>
+    </Content>
+    <Content Include="res\mecha.png">
+      <Filter>res</Filter>
+    </Content>
+    <Content Include="res\ship.wav">
+      <Filter>res</Filter>
+    </Content>
+    <Content Include="res\tammy.png">
+      <Filter>res</Filter>
+    </Content>
+    <Content Include="res\tiro.png">
+      <Filter>res</Filter>
+    </Content>
+    <Content Include="res\tiro.wav">
+      <Filter>res</Filter>
+    </Content>
+    <Content Include="res\warning.wav">
+      <Filter>res</Filter>
+    </Content>
+    <InfoPlist Include="GreenJuiceTeam.iOS\Info.plist">
+      <Filter>GreenJuiceTeam.iOS\Supporting Files</Filter>
+    </InfoPlist>
+    <None Include="..\GreenJuiceTeam.iOS.StaticLibrary\x64\Debug\GreenJuiceTeam.iOS.StaticLibrary.xcodeproj" />
+  </ItemGroup>
+</Project>
