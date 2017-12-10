@@ -40,7 +40,6 @@
     <ProjectGuid>{a85e8e0a-4ffe-4eac-8748-45ec3060f5f0}</ProjectGuid>
     <PbxprojDirectory>GreenJuiceTeam.iOS.Application.xcodeproj</PbxprojDirectory>
     <TARGET_NAME>GreenJuiceTeam</TARGET_NAME>
-    <ProjectName>GreenJuiceTeam.iOS.Application</ProjectName>
   </PropertyGroup>
   <Import Project="$(iOSTargetsPath)\iOS.Default.props" />
   <PropertyGroup Label="Configuration">
@@ -212,30 +211,7 @@
     <ClInclude Include="utilities.h" />
     <Content Include="GreenJuiceTeam.iOS\Base.lproj\Main.storyboard" />
     <Content Include="GreenJuiceTeam.iOS\Images.xcassets\AppIcon.appiconset\Contents.json" />
-    <Content Include="res\1.png" />
-    <Content Include="res\alien1.wav" />
-    <Content Include="res\aliendie1.wav" />
-    <Content Include="res\alienTiro1.wav" />
-    <Content Include="res\balloon.png" />
-    <Content Include="res\boss2_1.png" />
-    <Content Include="res\boss2_2.png" />
-    <Content Include="res\bossdie.wav" />
-    <Content Include="res\explosao.png" />
-    <Content Include="res\explosao2.png" />
-    <Content Include="res\explosion.wav" />
-    <Content Include="res\hb.png" />
-    <Content Include="res\intro.png" />
-    <Content Include="res\jetclaw.png" />
-    <Content Include="res\jetclawExplosion.png" />
-    <Content Include="res\level1.mp3" />
-    <Content Include="res\level1.png" />
-    <Content Include="res\max.png" />
-    <Content Include="res\mecha.png" />
-    <Content Include="res\ship.wav" />
-    <Content Include="res\tammy.png" />
-    <Content Include="res\tiro.png" />
-    <Content Include="res\tiro.wav" />
-    <Content Include="res\warning.wav" />
+    <Content Include="res\logo.png" />
     <InfoPlist Include="GreenJuiceTeam.iOS\Info.plist" />
     <None Include="..\GreenJuiceTeam.iOS.StaticLibrary\x64\Debug\GreenJuiceTeam.iOS.StaticLibrary.xcodeproj" />
   </ItemGroup>

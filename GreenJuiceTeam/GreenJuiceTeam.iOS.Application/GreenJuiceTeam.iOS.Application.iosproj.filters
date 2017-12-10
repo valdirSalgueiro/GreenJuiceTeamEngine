@@ -2,21 +2,21 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="GreenJuiceTeam.iOS">
-      <UniqueIdentifier>{a1209f51-9f17-4eff-b32d-dbccd02939a9}</UniqueIdentifier>
+      <UniqueIdentifier>{01e5bb75-62b1-49ad-b488-ef7a0f3b5ae4}</UniqueIdentifier>
     </Filter>
     <Filter Include="GreenJuiceTeam.iOS\Images.xcassets">
-      <UniqueIdentifier>{e143b7bc-a2ce-41cf-9159-5d18a3d4d94a}</UniqueIdentifier>
+      <UniqueIdentifier>{eb1459b9-5073-4936-b28d-70a943c45734}</UniqueIdentifier>
       <Extensions>GreenJuiceTeam.iOS\Images.xcassets\*</Extensions>
-    </Filter> 
+    </Filter>
     <Filter Include="GreenJuiceTeam.iOS\Images.xcassets\AppIcon.appiconset">
-      <UniqueIdentifier>{f41292a2-38a5-4107-a14e-b9c592e2b7c8}</UniqueIdentifier>
+      <UniqueIdentifier>{cf2e239f-397d-426f-8add-747bd4b52386}</UniqueIdentifier>
       <Extensions>GreenJuiceTeam.iOS\Images.xcassets\AppIcon.appiconset\*</Extensions>
     </Filter>
     <Filter Include="GreenJuiceTeam.iOS\Supporting Files">
-      <UniqueIdentifier>{c84f4c91-b8d0-477b-afa6-c7556caa4669}</UniqueIdentifier>
+      <UniqueIdentifier>{6b732676-ca81-4134-aa7a-4574ae2c03e2}</UniqueIdentifier>
     </Filter>
     <Filter Include="res">
-      <UniqueIdentifier>{320dcd5a-dd1d-42e4-a6e3-f190b1cb017d}</UniqueIdentifier>
+      <UniqueIdentifier>{af8c2d33-32cc-48cd-a6bc-54492d3fba72}</UniqueIdentifier>
       <Extensions>res\*</Extensions>
     </Filter>
   </ItemGroup>
@@ -48,76 +48,7 @@
     <Content Include="GreenJuiceTeam.iOS\Images.xcassets\AppIcon.appiconset\Contents.json">
       <Filter>GreenJuiceTeam.iOS\Images.xcassets\AppIcon.appiconset</Filter>
     </Content>
-    <Content Include="res\1.png">
-      <Filter>res</Filter>
-    </Content>
-    <Content Include="res\alien1.wav">
-      <Filter>res</Filter>
-    </Content>
-    <Content Include="res\aliendie1.wav">
-      <Filter>res</Filter>
-    </Content>
-    <Content Include="res\alienTiro1.wav">
-      <Filter>res</Filter>
-    </Content>
-    <Content Include="res\balloon.png">
-      <Filter>res</Filter>
-    </Content>
-    <Content Include="res\boss2_1.png">
-      <Filter>res</Filter>
-    </Content>
-    <Content Include="res\boss2_2.png">
-      <Filter>res</Filter>
-    </Content>
-    <Content Include="res\bossdie.wav">
-      <Filter>res</Filter>
-    </Content>
-    <Content Include="res\explosao.png">
-      <Filter>res</Filter>
-    </Content>
-    <Content Include="res\explosao2.png">
-      <Filter>res</Filter>
-    </Content>
-    <Content Include="res\explosion.wav">
-      <Filter>res</Filter>
-    </Content>
-    <Content Include="res\hb.png">
-      <Filter>res</Filter>
-    </Content>
-    <Content Include="res\intro.png">
-      <Filter>res</Filter>
-    </Content>
-    <Content Include="res\jetclaw.png">
-      <Filter>res</Filter>
-    </Content>
-    <Content Include="res\jetclawExplosion.png">
-      <Filter>res</Filter>
-    </Content>
-    <Content Include="res\level1.mp3">
-      <Filter>res</Filter>
-    </Content>
-    <Content Include="res\level1.png">
-      <Filter>res</Filter>
-    </Content>
-    <Content Include="res\max.png">
-      <Filter>res</Filter>
-    </Content>
-    <Content Include="res\mecha.png">
-      <Filter>res</Filter>
-    </Content>
-    <Content Include="res\ship.wav">
-      <Filter>res</Filter>
-    </Content>
-    <Content Include="res\tammy.png">
-      <Filter>res</Filter>
-    </Content>
-    <Content Include="res\tiro.png">
-      <Filter>res</Filter>
-    </Content>
-    <Content Include="res\tiro.wav">
-      <Filter>res</Filter>
-    </Content>
-    <Content Include="res\warning.wav">
+    <Content Include="res\logo.png">
       <Filter>res</Filter>
     </Content>
     <InfoPlist Include="GreenJuiceTeam.iOS\Info.plist">
