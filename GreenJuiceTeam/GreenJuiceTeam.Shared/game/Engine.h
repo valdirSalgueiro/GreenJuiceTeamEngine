@@ -31,8 +31,6 @@
 #include "core/gl2d.h"
 #include "Vector2D.h"
 
-template <class T> class Vector2D;
-
 class Engine{
 public:
 
