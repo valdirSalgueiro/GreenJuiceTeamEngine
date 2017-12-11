@@ -11,7 +11,6 @@ void shutdown_gl();
 
 Engine* engine;
 const int width = 800,height = 480;
-extern bool touch;
 int dir;
 			
 void GLFWCALL keyfun(int key, int action);
@@ -49,9 +48,9 @@ int init_gl()
 void GLFWCALL keyfun(int key, int action) {
 	if (key == GLFW_KEY_SPACE  )
 		if(action == GLFW_RELEASE)
-			touch = false;
+			engine->setTouch(false);
 		else
-			touch = true;
+			engine->setTouch(true);
 		
 	if(action == GLFW_RELEASE){
 		if (key == GLFW_KEY_RIGHT)
@@ -86,7 +85,6 @@ void GLFWCALL keyfun(int key, int action) {
 
 void do_frame()
 {	
-	engine->handleInput(1, dir);
 	engine->update(1.0f/60.0f);
 	engine->render(1.0f/60.0f);
 	glfwSwapBuffers();

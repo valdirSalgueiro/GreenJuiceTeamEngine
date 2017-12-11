@@ -15,13 +15,11 @@ include_directories (
 "game/freetype"
 "game/sound"
 "game/zlib"
-"game/bulletML"
 "game/font"
 "game/png"
+"game/core"
 "game"
 "./"
-"game/fonts"
-"game/bulletML/inc"
 "../GreenJuiceTeam.iOS.Application" 
 ) 
 
@@ -85,54 +83,32 @@ set(SOURCES
   game/freetype/type1/type1.c
   game/freetype/type42/type42.c
   game/freetype/winfonts/winfnt.c
-    game/Balloon.cpp
-    game/Boss2.cpp
-    game/bulletML/bulletmlparser-tinyxml.cpp
-    game/bulletML/bulletmlparser.cpp
-    game/bulletML/bulletmlrunner.cpp
-    game/bulletML/bulletmlrunnerimpl.cpp
-    game/bulletML/bulletmltree.cpp
-    game/bulletML/calc.cpp
-    game/bulletML/command.cpp
-    game/bulletML/formula-variables.cpp
-    game/bulletML/object.cpp
-    game/bulletML/tinyxml/tinyxml.cpp
-    game/bulletML/tinyxml/tinyxmlerror.cpp
-    game/bulletML/tinyxml/tinyxmlparser.cpp
-    game/Easing.cpp
-    game/Enemy.cpp
-    game/Engine.cpp
-    game/font/FontAtlas.cpp
-    game/font/FTBitmapChar.cpp
-    game/font/FTBitmapFont.cpp
-    game/font/TreeNode.cpp
-    game/gl2d.cpp
-    game/GLES2SpriteBatch.cpp
-    game/Hellburguer.cpp
-    game/Intro.cpp
-    game/Jetclaw.cpp
-    game/Max.cpp
-    game/Player.cpp
-    game/sound.cpp
-    game/SpriteBatch.cpp
-    game/Tammy.cpp
-    game/Tween.cpp
-    game/zlib/adler32.c
-    game/zlib/compress.c
-    game/zlib/crc32.c
-    game/zlib/deflate.c
-    game/zlib/gzclose.c
-    game/zlib/gzlib.c
-    game/zlib/gzread.c
-    game/zlib/gzwrite.c
-    game/zlib/infback.c
-    game/zlib/inffast.c
-    game/zlib/inflate.c
-    game/zlib/inftrees.c
-    game/zlib/trees.c
-    game/zlib/uncompr.c
-    game/zlib/zutil.c
+  game/font/FontAtlas.cpp
+  game/font/FTBitmapChar.cpp
+  game/font/FTBitmapFont.cpp
+  game/font/TreeNode.cpp
+  game/core/gl2d.cpp
+  game/core/GLES2SpriteBatch.cpp
+  game/core/SpriteBatch.cpp
+  game/sound/sound.cpp
+  game/zlib/adler32.c
+  game/zlib/compress.c
+  game/zlib/crc32.c
+  game/zlib/deflate.c
+  game/zlib/gzclose.c
+  game/zlib/gzlib.c
+  game/zlib/gzread.c
+  game/zlib/gzwrite.c
+  game/zlib/infback.c
+  game/zlib/inffast.c
+  game/zlib/inflate.c
+  game/zlib/inftrees.c
+  game/zlib/trees.c
+  game/zlib/uncompr.c
+  game/zlib/zutil.c
+  game/Engine.cpp
 )
+
 
 
 set(SOURCE 
