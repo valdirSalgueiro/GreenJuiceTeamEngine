@@ -52,7 +52,7 @@ void Engine::render(float time) {
 
 and thats it! :)
 
-To see it running, set one of the application platforms(UWP, IOS or android) as your initiliazing project:
+To see it running, set one of the application platforms(UWP, IOS or android) as your initiliazing project. Make sure  the target is set to x64!
 
 # Libraries
 - Freetype
