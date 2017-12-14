@@ -54,6 +54,62 @@ and thats it! :)
 
 To see it running, set one of the application platforms(UWP, IOS or android) as your initiliazing project. Make sure  the target is set to x64!
 
+# Low level 
+
+This section is not necessary to develop games with the library, but still some good to know information. In most games you wont need to tinker with this kind of low level.
+
+For (hopefully) more efficient sprite rendering the engine uses batch rendering.
+
+Here are the main shaders:
+
+fragment shader:
+```glsl
+uniform sampler2D sampler2d;
+varying lowp vec4 vertexColor;
+varying lowp vec2 texCoord;
+
+void main(void)
+{
+	gl_FragColor = texture2D(sampler2d, texCoord)*vertexColor;
+}
+```
+
+Here, nothing very special, just your common "texture" fragment shader. Things get a little dicey with the vertex shader though
+
+```glsl
+uniform mediump mat4 projMatrix;
+uniform mediump mat4 im[16];         // input
+varying mediump vec2 texCoord;
+varying mediump vec4 vertexColor;
+
+void main(void)
+{
+	mediump mat4 thisim = im[int(vertex.z)]; //input
+	highp vec2 transVertex = vec2(thisim[2][0], thisim[2][1]) + mat2(thisim[0][0], thisim[0][1], thisim[1][0], thisim[1][1]) * (vertex.xy - vec2(thisim[2][2] - 0.5, thisim[2][3] - 0.5));
+	gl_Position = vec4(transVertex, 1, 1) * projMatrix;
+	vertexColor = vec4(thisim[3][0], thisim[3][1], thisim[3][2], thisim[3][3]);
+	texCoord = (vertex.xy + vec2(0.5, 0.5)) * vec2(thisim[1][2], thisim[1][3]) + vec2(thisim[0][2], thisim[0][3]);
+}
+```
+
+here the shader expects to be sent a batch with 16 "sprite information" condensed in the mat4 im[16] structure. If you change the batch size remeber to change this as well... anyway, the batch index is encoded in the "z" component of the z vertice. that are filled in buffer creation time. More specifically in this part:
+
+```cpp
+	GLfloat vertices[] = { -0.5f,-0.5f,0.0f, 0.5f,-0.5f,0.0f, 0.5f,0.5f,0.0f,    // triangle 1
+						  -0.5f,-0.5f,0.0f, 0.5f,0.5f,0.0f, -0.5f,0.5f,0.0f };   // triangle 2
+
+	GLfloat *tempVertices = new GLfloat[3 * 6 * BATCH_SIZE];
+	for (int f = 0; f < BATCH_SIZE; f++) {
+		memcpy(tempVertices + f * 3 * 6, vertices, 3 * 6 * sizeof(GLfloat));
+		for (int g = 0; g < 6; g++) tempVertices[f * 3 * 6 + 2 + g * 3] = f;            // mark the index for each triangle
+	}
+
+	glBindBuffer(GL_ARRAY_BUFFER, vbo);
+	glBufferData(GL_ARRAY_BUFFER, BATCH_SIZE * 6 * sizeof(GLfloat) * 3, tempVertices, GL_STATIC_DRAW);
+```
+
+so its basically 16 quads created before hand, and all with fixed position (from -0.5 to 0.5).
+
 # Libraries
 - Freetype
 - Libpng
